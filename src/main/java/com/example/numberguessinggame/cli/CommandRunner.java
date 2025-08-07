@@ -13,7 +13,7 @@ public class CommandRunner implements CommandLineRunner {
 
     @Override
     public void run (String... args) {
-        int answer = 1 + random.nextInt () * 100;
+        int answer = 1 + random.nextInt (100);
         int chances = 0;
 
         System.out.println ("Welcome to the Number Guessing Game!");
