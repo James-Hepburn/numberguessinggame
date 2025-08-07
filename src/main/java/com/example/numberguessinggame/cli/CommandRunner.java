@@ -44,9 +44,9 @@ public class CommandRunner implements CommandLineRunner {
             System.out.print ("\nEnter a guess: ");
             int guess = input.nextInt ();
 
-            if (guess > answer) {
+            if (guess < answer) {
                 System.out.println ("Incorrect! The number is greater than " + guess + ".");
-            } else if (guess < answer) {
+            } else if (guess > answer) {
                 System.out.println ("Incorrect! The number is less than " + guess + ".");
             } else {
                 System.out.println ("Congratulations! You guessed the correct number in " + i + " attempts.");
